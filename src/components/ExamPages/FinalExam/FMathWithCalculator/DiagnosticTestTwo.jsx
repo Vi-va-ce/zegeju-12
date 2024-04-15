@@ -19,7 +19,7 @@ const DiagnosticTestTwo = ({ currentIndex, timer }) => {
           </p>
         </div>
         <div className="absolute md:ml-[510px] ml-[160px] md:mt-0 mt-2 ">
-          <h1 className='diagnostic-text  md:text-5xl text-[14.81px] font-semibold '>Final test</h1>
+          <h1 className='diagnostic-text  md:text-4xl text-[13.81px] font-semibold '>Final test</h1>
           <p className='md:text-sm text-[7.12px] text-gray-500  md:ml-5 ml-'>Math With Calculator</p>
         </div>
         {timer > 0 && (

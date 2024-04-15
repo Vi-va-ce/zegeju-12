@@ -211,7 +211,7 @@ const App = () => {
         />
 
 <Route
-          path="/Pevidence"
+          path="/Fevidence"
           element={
             <Auth>
               <Fevidence/>

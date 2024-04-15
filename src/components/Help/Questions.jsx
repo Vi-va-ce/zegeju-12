@@ -9,25 +9,23 @@ function Questions() {
 
   const questions = [
     {
-      question: 'Question 1',
-      answer: 'Answer 1',
+      question: 'why is it only the SAT exam I can access, why are the other exams unavailable?',
+      answer: 'This is a beta version of our platform; only the SAT practicing tool is available for now; all the other features are going through development and will be available soon.',
     },
     {
-      question: 'Question 2',
-      answer: 'Answer 2',
+      question: 'How does the platform help me prepare for exams?',
+      answer: 'Our platform provides a wide range of study materials, practice tests, and quizzes tailored to various subjects and exam types. You can access comprehensive study guides, review notes, and interactive practice questions to enhance your exam preparation.',
     },
     {
-      question: 'Question 3',
-      answer: 'Answer 3',
+      question: 'How to I make the payment?',
+      answer: 'Select the logo of the bank you want to make the payment with, and according to the information that is going to appear on the top box, make the payment and upload a screenshot of the completed transaction. ',
     },
     {
-      question: 'Question 4',
-      answer: 'Answer 4',
+      question: 'Can I track my progress and performance on the platform?',
+      answer: 'Our platform offers personalized progress tracking features, allowing you to monitor your performance and identify areas for improvement. You can view detailed analytics, review past performance, and adjust your study strategy accordingly.',
     },
-    {
-      question: 'Question 5',
-      answer: 'Answer 5',
-    },
+  
+    
   ];
 
   return (

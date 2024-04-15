@@ -3,7 +3,7 @@ import TestNav from "../../../TestNav";
 import TestBodyTwo from "./TestBodyTwo";
 import TestComplete from "../../../Messages/TestComplete";
 
-const Dmathnc = () => {
+const Fmathnc = () => {
   const [testComplete, setTestComplete] = useState(false);
 
   const onResponseSubmit = () => {
@@ -50,4 +50,4 @@ const Dmathnc = () => {
     </div>
   );
 };
-export default Dmathnc;
+export default Fmathnc;

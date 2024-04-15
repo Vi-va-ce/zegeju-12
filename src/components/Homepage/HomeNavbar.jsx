@@ -21,6 +21,11 @@ const HomeNavbar = () => {
       }
     } else if (title === 'about') {
       navigate('/About'); // Navigate to "/About"
+    } else if (title === 'pricing') {
+      const pricingSection = document.getElementById('pricing');
+      if (pricingSection) {
+        pricingSection.scrollIntoView({ behavior: 'smooth' });
+      }
     }
 
     setActive(title);
@@ -37,7 +42,7 @@ const HomeNavbar = () => {
           }`}
           onClick={() => handleLinkClick('about')}
         >
-          <a href="">about</a>
+          <a href="#about">about</a>
         </li>
         <li
           className={`font-poppins font-normal cursor-pointer text-[16px] ml-8 mr-8 ${

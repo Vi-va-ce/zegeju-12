@@ -10,7 +10,7 @@ import PracticeTestHead from './practiceTestHead';
 const TestBodyTwo = ({ onMessageReceived }) => {
   const [testData, setTestData] = useState(null);
   const [currentIndex, setCurrentIndex] = useState(0);
-
+  const [timer, setTimer] = useState(500); // 25 minutes in seconds
   const [responseData, setResponseData] = useState(null);
 
   useEffect(() => {
@@ -45,15 +45,15 @@ const TestBodyTwo = ({ onMessageReceived }) => {
 
   return (
     <>
-      <div className='test-background'>
-        <div className='md:ml-32'>
+      <div className='test-background  ml-[10px] md:ml-[-40px] '>
+        <div className='pt-[20px] md:pt[0px] ml-[2px] md:ml-[0px] '>
           {testData && <PracticeTestHead data={testData} currentIndex={currentIndex}  />}
         </div>
         <div className='flex md:flex-row'>
-          <div className='hidden md:flex md:flex-row pt-2'>
+          <div className='hidden md:flex md:flex-row'>
             <FastSurvey responseData={responseData} />
           </div>
-          <div className='md:ml-3.5'>
+          <div className='ml-3.5'>
             {testData && (
               <>
                 <div className='scrollable-content md:max-h-[380px] max-h-[510px]'>

@@ -35,28 +35,28 @@ function Footer() {
      </div>
      <div className="w-full h-[82px] md:h-[120px]  bg-black">
      <div className='flex pt-4 md:pt-8'>
-        <div>
-            <a href="https://example.com">
+     <div className='ml-[0px] md:ml-[00px]'>
+            <a href="https://t.me/zegjucom">
             <img src={Linkedin} alt="Image description" class="w-[30px] h-[30px] ml-[46px] md:ml-[430px] mr-8 md:mr-[70px]" />
             </a>
         </div>
         <div>
-            <a href="https://example.com">
+            <a href="https://twitter.com/ZegjuExamPrep">
             <img src={Twitter} alt="Image description" class="w-[30px] h-[30px] mr-8 md:mr-[70px]" />
             </a>
         </div>
         <div>
-            <a href="https://example.com">
+            <a href="https://www.facebook.com/profile.php?id=61557787221318&mibextid=ZbWKwL">
             <img src={Facebook} alt="Image description" class="w-[30px] h-[30px] mr-8 md:mr-[70px]" />
             </a>
         </div>
         <div>
-            <a href="https://example.com">
+            <a href="https://www.instagram.com/zegjuexamprep?igsh=NDJ5YWw1aWV0eWdl">
             <img src={Instagram} alt="Image description" class="w-[30px] h-[30px] mr-8 md:mr-[70px]" />
             </a>
         </div>
         <div>
-            <a href="https://example.com">
+            <a href="https://www.youtube.com/channel/UCbUpUOUD82ATNLltD9jyXJg">
             <img src={Youtube} alt="Image description" class="w-[30px] h-[30px]" />
             </a>
         </div>

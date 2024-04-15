@@ -20,7 +20,7 @@ const DiagnosticTestTwo = ({ currentIndex, timer }) => {
         </div>
         <div className="absolute md:ml-[510px] ml-[160px] md:mt-0 mt-2 ">
           <h1 className='diagnostic-text  md:text-4xl text-[13.81px] font-semibold '>Diagnostic test</h1>
-          <p className='md:text-sm text-[7.12px] text-gray-500 md:mt-1 md:ml-4 ml-4'>Evidence Based Reading</p>
+          <p className='md:text-sm text-[7.12px] text-gray-500 md:mt-1 md:ml-4 ml-4'>writing and language</p>
         </div>
         {timer > 0 && (
           <p className='md:ml-[1010px] md:mt-[20px] ml-[300px] mt-[7px] absolute '>{formatTime(timer)}</p>

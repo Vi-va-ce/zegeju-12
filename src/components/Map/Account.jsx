@@ -1,12 +1,33 @@
 import React, { useState } from 'react';
+import { useEffect } from 'react';
 import axios from 'axios';
 import { time } from '../../assets';
 
 function Account() {
-  const username = 'Esrom sharew';
+  const [profileData, setProfileData] = useState(null);
+
+  useEffect(() => {
+    const fetchProfileData = async () => {
+      try {
+        const response = await axios.post('v1/student/studentProfile', {
+          // Add any request payload if required
+        });
+        setProfileData(response.data);
+        console.log(response.data)
+      } catch (error) {
+        console.error('Error fetching profile data:', error);
+      }
+    };
+
+    fetchProfileData();
+  }, []);
+
+  const username = profileData?.firstName + " " +profileData?.lastName || "";
   const firstLetter = username.charAt(0);
-  const joinedMonth = 'February 2024';
-  const email = 'Eesromsharew1';
+  const joinedMonth = profileData?.joinedMonth || "February 2024";
+  const email = profileData?.email || "Eesromsharew1";
+  const xp = profileData?.xp || "112";
+
 
   const [newPassword, setNewPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');

@@ -26,7 +26,7 @@ function StartCircle({ id }) {
   else if (id === 'MathCalculatorFinalTest') {
     linkTo = '/FMathc';
   }else if (id === 'MathNoCalculatorFinalTest') {
-    linkTo = '/Fnmath';
+    linkTo = '/Fmathnc';
   }else if (id === 'WritingAndLanguageFinalTest') {
     linkTo = '/Fwriting';
   }else if (id === 'EvidenceBasedReadingFinalTest') {

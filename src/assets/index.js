@@ -98,10 +98,12 @@ import x347 from './347.svg';
 import x348 from './348.svg';
 import home2 from "./home2.svg"
 import home3 from './home3.svg'
+import home4 from './home4.svg'
 
 
 
 export {
+  home4,
   home3,
   home2,
   b1,

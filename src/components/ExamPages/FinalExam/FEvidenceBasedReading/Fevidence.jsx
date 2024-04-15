@@ -15,7 +15,7 @@ const Fevidence = () => {
   };
 
   // Check if testComplete is already set in the localStorage
-  const isTestComplete = localStorage.getItem("fevidencetestComplete") === "true";
+  const isTestComplete = localStorage.getItem("FevidencetestComplete") === "true";
 
 
   if (isTestComplete) {

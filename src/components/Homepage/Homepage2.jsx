@@ -15,7 +15,7 @@ function Homepage2({SatData}) {
   };
 
   return (
- <div>
+ <div  id="pricing">
     <div className='pt-[18px]  md:pt-[40px]  ml-[86px]  md:ml-[340px] '>
          <div className=" md:w-[698.12px]  md:h-[60px]  w-[184.86px]  h-[15.89px]   text-center text-black text-xs md:text-4xl font-bold font-['Arial']  ">Find a plan that’s right for you</div>
     </div> 

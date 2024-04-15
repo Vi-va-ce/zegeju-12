@@ -11,7 +11,7 @@ import Footer2 from "../../../Footer/Footer2";
 const TestBodyTwo = ({ onResponseSubmit }) => {
   const [testData, setTestData] = useState(null);
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [timer, setTimer] = useState(2340); // Initialize with 0
+  const [timer, setTimer] = useState(2580); // Initialize with 0
   const [localStorageData, setLocalStorageData] = useState({});
   const [submitMessage, setSubmitMessage] = useState('');
   const [notificationDisplayed, setNotificationDisplayed] = useState(false);
@@ -93,7 +93,7 @@ const TestBodyTwo = ({ onResponseSubmit }) => {
   return (
     <>
       <div className='test-background  ml-[10px] md:ml-[-40px]'>
-        <div className='pt-[10px] md:pt[0px] ml-[9px] md:ml-[0px] '>
+        <div className='pt-[20px] md:pt[0px] ml-[2px] md:ml-[0px] '>
           {testData && <DiagnosticTestTwo data={testData} currentIndex={currentIndex} timer={timer} />}
         </div>
         <div className='flex md:flex-row'>
@@ -106,7 +106,7 @@ const TestBodyTwo = ({ onResponseSubmit }) => {
                   <ChoicesTwo data={testData} currentIndex={currentIndex} onLocalStorageChange={handleLocalStorageChange} />
                 </div>
 
-                <div className='bg-white md:w-[844px] h-[60px] mt-[-20px] w-[361px] mb-2 '>
+                <div className=''>
                   <PrevNext
                     currentIndex={currentIndex}
                     totalItems={testData.sections.length}
@@ -114,7 +114,7 @@ const TestBodyTwo = ({ onResponseSubmit }) => {
                     onNext={handleNext}
                   />
                 </div>
-                <div className='mb-5 md:mt-0 mt-[20px] pb-[90px] md:ml-96 ml-[140px]  '>
+                <div className='mb-5 md:mt-8 mt-[20px] pb-[90px] md:ml-96 ml-[140px]  '>
                   <SubmitButtonTwo message={submitMessage} onResponseSubmit={handleResponseSubmit} /> {/* Pass the submit message and callback function as props */}
                 </div>
               </>
